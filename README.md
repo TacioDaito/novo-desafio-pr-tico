@@ -1,3 +1,5 @@
+![Badge](https://img.shields.io/badge/Blog-Rocketseat-%237159c1?style=for-the-badge&logo=ghost)
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 # Project Title/Título do Projeto: Practical Challenge/Desafio Prático
 
 ## Status: Ongoing/Em Progresso
