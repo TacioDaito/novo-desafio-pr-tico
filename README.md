@@ -13,6 +13,7 @@ In a certain website project, a couple of features must be modified and develope
 5. On the data showcase, print the "The Boys" characters names in blue and the "Supes" in red.
 
 Requirements: XAMPP 5.6.11; Supportive tools: "Personagem.sql" e "SQLDrive.sql" classes contained in "\novo-desafio-pr-tico\backend_php\classes" directory.
+
 ---
 Em um certo projeto de website, algumas funções devem ser modificadas e desenvolvidas utilizando as seguintes linguagens: HTML, PHP, MySQL, JavaScript (opcional) e CSS (opcional). Segue os passos e requerimentos a serem seguidos:
 
