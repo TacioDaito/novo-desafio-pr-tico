@@ -9,7 +9,7 @@
 
 In a certain website project, a couple of features must be modified and developed using the following languages: HTML, PHP, MySQL, JavaScript (optional) e CSS (optional). Here are the steps and requirements to be followed:
 
-1. On the site's navbar, the contents of the "Home" button must be changed to "Início" and it must redirect the user to a new page ("formulario.html") when clicked.
+1. On the site's navbar, the contents of the "Home" button must be changed to "Início" and a new button must be created to redirect the user to a new page ("formulario.html").
 2. On the new page, a form must be created to insert a new idea for a character of the third season of The Boys. The form must contain the following fields: character's name, age, possible actors/actresses, alignment* and biography. *Alignment must contain the options "The boys" or "Supes".
 3. Develop the form's logic and make so the data is received by the back-end (in PHP). On top of that, assure that the data persists (save the data) in the MySQL database.
 4. Show all character data saved on the "lista.html" page.
