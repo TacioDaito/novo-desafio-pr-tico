@@ -52,6 +52,60 @@
 
     <!-- Insira o formulário aqui. -->
 
+    <section>
+      <div class="container">
+        <form action="" method="post">
+          <fieldset>
+            <legend>Perfil do Personagem</legend>
+            <div class="row">
+              <div class="col">
+                <label for="charName">Nome do Personagem: </label>
+                <input type="text" name="nameInput"
+                id="charName" class="form-control"
+                placeholder="Digite aqui o nome do personagem.">
+              </div>
+              <div class="col">
+                <label for="charAge">Idade: </label>
+                <input type="number" min ="0" name="ageInput"
+                id="charAge" class="form-control" placeholder=
+                "Digite aqui a idade do personagem. Caso desconheça, digite 0">
+              </div>
+            </div>
+            <label for="charAct">Possíveis atores/atrizes: </label>
+            <input type="text" name="actInput"
+            id="charAct" class="form-control"
+            placeholder="Digite aqui o nome dos candidatos(as) ao papel.">
+          </fieldset>
+          <fieldset>
+            <legend>Alinhamento do Personagem</legend>
+            <div class="row">
+              <div class="col text-center">
+                <input type="radio" id="charAlignBoys" name="alignInput"
+                value="boys">
+                <label for="charAlignBoys">The Boys</label>
+              </div>
+              <div class="col text-center">
+                <input type="radio" id="charAlignSupes" name="alignInput"
+                value="supes">
+                <label for="charAlignSupes">Supes</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Biografia do Personagem</legend>
+            <textarea id="charBio" name="bioInput"
+            rows="8" cols="40" class="form-control" maxlength="1000"
+            placeholder="Descreva brevemente a vida do personagem."></textarea>
+          </fieldset>
+          <div class="col text-center">
+            <button type="submit" class="btn">Criar!</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Fim do formulário. -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
