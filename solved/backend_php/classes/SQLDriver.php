@@ -14,7 +14,7 @@ class SQLDriver {
         if (self::$PDOInstance === NULL) {
 			self::$PDOInstance = new PDO("mysql:host=" . self::$dbHost . ";dbname=" . self::$dbName, self::$dbUser, self::$dbPass);
         }
-        return self::$PDOInstance;
+		return self::$PDOInstance;
 	}
 
 	public static function selectAllEntities($tableName, $class) {
@@ -25,12 +25,12 @@ class SQLDriver {
         }
 	}
 
-	public static function insertPersonagem($nome, $atores, $idade, $alinhamento, $bio){
+	public static function insertPersonagem($nome, $idade, $interprete, $alinhamento, $bio){
 		$stmt = self::getPDO()->prepare("INSERT INTO personagens (nome, idade, interprete, alinhamento, biografia) VALUES (:nome, :idade, :interprete, :alinhamento, :biografia)");
         
 		$stmt->bindParam(":nome", $nome);
 		$stmt->bindParam(":idade", $idade);
-		$stmt->bindParam(":interprete", $atores);
+		$stmt->bindParam(":interprete", $interprete);
 		$stmt->bindParam(":alinhamento", $alinhamento);
 		$stmt->bindParam(":biografia", $bio);
 	
