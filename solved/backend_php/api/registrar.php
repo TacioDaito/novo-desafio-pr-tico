@@ -5,7 +5,7 @@ require "../classes/Personagem.php";
 $data = $_POST;
 $erros = [];
 foreach (['nome', 'idade', 'interprete', 'alinhamento', 'biografia'] as $field) {
-    if (empty($data[$field])) {
+    if (empty($data[$field]) && $data[$field] != 0) {
         $erros[] = sprintf('O campo %s é necessário mas não foi preenchido.', 
         $field);
     }

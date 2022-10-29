@@ -19,6 +19,11 @@ function addElement(infos, classes) {
     row.children[3].style.color = '#fa5757';
   }
 
+  //Muda idade caso for igual a '0' para 'Desconhecida'.
+  if (row.children[1].textContent == '0') {
+    row.children[1].textContent = 'Desconhecida';
+  } 
+
   tabela.appendChild(row);
 }
 
