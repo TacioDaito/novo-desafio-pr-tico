@@ -71,11 +71,12 @@ input[type="radio"]:hover+label{
 }
 .btn{
     color: #000;
+    font-family: 'Monda';
     font-size: larger;
     font-weight: bold;
     background-color: #ffdd76;
     border-radius: 25px;
-    padding: 4px 100px;
+    padding: 4px 70px;
     transition: all 0.3s;
 }
 .btn:hover{
@@ -95,4 +96,27 @@ input[type="radio"]:hover+label{
     border-color: #fec925;
     color: #fff;
     background-color: #00000080;
+}
+#good{
+    color: blue;
+    font-weight: 900;
+    font-size: xx-large;
+    background-color: #fec925;
+    font-family: 'Krona One';
+    margin: 210px 0px 0px 0px;
+    padding: 10px;
+    transform-origin: top right;
+    transform: skewY(-6deg);
+    z-index: -10;
+}
+#bad{
+    color: red;
+    font-weight: 900;
+    font-size: xx-large;
+    background-color: #fec925;
+    font-family: 'Krona One';
+    margin: 210px 0px 0px 0px;
+    padding: 10px;
+    transform-origin: top left;
+    transform: skewY(6deg);
 }
