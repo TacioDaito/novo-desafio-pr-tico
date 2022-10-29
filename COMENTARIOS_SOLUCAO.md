@@ -35,9 +35,9 @@
 ### Solução do passo 4:
 * A lógica necessária para exibir o conteúdo do database consiste em, como no passo anterior, utilizar os métodos já existentes para acessar o database, armazenar seu conteúdo em um objeto ou variável e então exibir-lo na página HTML. Porém nesse passo a lógica de exibição é feita através de um script javascript 'tabela.js' já existente que altera a estrutura e os elementos da página 'lista.html'.
   
-  O primeiro passo foi chamar o método 'selectAllEntities' da classe 'SQLDriver' para criar uma conexão com o database e buscar nele as informações, método esse chamado pelo método 'obterTodos' da classe 'Personagem'. Ao fazer essa chamada no 'personagens.php', é possível gerar a metadata '.json' contendo a informação de todos personagens salvos no database e requisitá-la no script 'tabela.js'. Dentro desse script, existe a lógica que gera o elemento de tabela na página 'lista.html' contendo as informações dos personagens.
+  O primeiro passo foi chamar o método 'selectAllEntities' da classe 'SQLDriver' para criar uma conexão com o database e buscar nele as informações, método esse chamado pelo método 'obterTodos' da classe 'Personagem'. Ao fazer essa chamada no 'personagens.php', é possível gerar a metadata '.json' contendo a informação de todos personagens salvos no database e requisitá-la no script 'tabela.js'. Dentro desse script, existe a lógica que gera o elemento de tabela na página 'lista.html' contendo as informações dos personagens extraidas da metadata.
 
 ### Passo 5: Na exibição de informações, exibir o nome dos personagens “The Boys” em azul e o nome dos personagens “Supes” em vermelho.
 
 ### Solução do passo 5:
-* Aa.
+* Para esse passo, basta utilizar os métodos de seleção de elementos da interface DOM para selecionar e modificar os elementos desejados. Utilizando uma lógica if-else, é possível identificar o alinhamento dos personagens da tabela gerada no passo 4 e modificar a cor dos seus nomes. Essa lógica foi feita no 'tabela.js', onde cada linha da tabela representa um personagem, o primeiro elemento de cada linha é o nome e o quarto é o alinhamento. A lógica consiste em usar indexação para selecionar esses elementos para comparação e alteração.
