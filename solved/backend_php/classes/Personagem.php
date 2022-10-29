@@ -8,15 +8,6 @@ class Personagem {
     public $alinhamento;
     public $biografia;
 
-    public function __construct($nome, $idade, $interprete, $alinhamento, 
-    $biografia) {
-        $this->nome = $nome;
-        $this->idade = $idade;
-        $this->interprete = $interprete;
-        $this->alinhamento = $alinhamento;
-        $this->biografia = $biografia;
-    }
-
     //Nome da tabela correspondente a esta classe no banco de dados.
     private static $table_name = "personagens";
 
@@ -26,8 +17,7 @@ class Personagem {
      * @param Personagem $personagem Entidade a ser inserida no banco de dados.
      */
     public static function inserir(Personagem $personagem) {
-        $sqld = new SQLDriver();
-        $sqld->insertPersonagem($personagem->nome, $personagem->idade, 
+        SQLDriver::insertPersonagem($personagem->nome, $personagem->idade, 
         $personagem->interprete, $personagem->alinhamento, $personagem->biografia);
     }
 
@@ -37,7 +27,7 @@ class Personagem {
      * @param Personagem[] Array com todos os personagens do banco.
      */
     public static function obterTodos() {
-        
+        return SQLDriver::selectAllEntities(self::$table_name, "Personagem");
     }
 }
 ?>

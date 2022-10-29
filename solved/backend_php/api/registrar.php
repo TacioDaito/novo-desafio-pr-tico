@@ -14,8 +14,14 @@ if (!empty($erros)) {
     echo implode('<br />', $erros);
     exit;
 }
-$personagem = new Personagem($data['nome'], $data['idade'], $data['interprete'], 
-$data['alinhamento'], $data['biografia']);
-$personagem->inserir($personagem);
+
+//Cria um objeto da classe 'Personagem' e executa o metodo 'inserir'.
+$personagem = new Personagem();
+$personagem->nome = $data['nome'];
+$personagem->idade = $data['idade'];
+$personagem->interprete = $data['interprete'];
+$personagem->alinhamento = $data['alinhamento'];
+$personagem->biografia = $data['biografia'];
+Personagem::inserir($personagem);
 echo "<script>location.href='../../pages/formulario.html';</script>";
 exit;

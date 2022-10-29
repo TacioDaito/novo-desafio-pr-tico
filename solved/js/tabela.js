@@ -16,3 +16,11 @@ function addElement(infos, classes) {
 function getJsonFromUrl(url) {
   return fetch(url).then(res => res.json());
 }
+
+//Busca as informações dos personagens no database e as insere na página.
+getJsonFromUrl('../backend_php/api/personagens.php').then(resultado => {
+  let personagensJson = resultado;
+  for (let personagem of personagensJson) {
+    addElement(Object.values(personagem), "infoPersonagem");
+  }
+});

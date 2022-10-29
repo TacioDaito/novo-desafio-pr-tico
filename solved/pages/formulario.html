@@ -62,19 +62,19 @@
               <div class="col">
                 <label for="charName">Nome do Personagem: </label>
                 <input type="text" name="nome"
-                id="charName" class="form-control" maxlength="50"
+                id="charName" class="form-control" maxlength="30"
                 placeholder="Digite aqui o nome do personagem.">
               </div>
               <div class="col">
                 <label for="charAge">Idade: </label>
-                <input type="number" min ="0" max="999999999" name="idade" 
+                <input type="number" min ="0" max="1000" name="idade" 
                 id="charAge" class="form-control" placeholder=
                 "Digite 0 caso a idade seja desconhecida.">
               </div>
             </div>
             <label for="charAct">Possíveis atores/atrizes: </label>
             <input type="text" name="interprete"
-            id="charAct" class="form-control" maxlength="120"
+            id="charAct" class="form-control" maxlength="60"
             placeholder="Digite aqui os nomes dos candidatos(as) ao papel.">
           </fieldset>
           <fieldset>
@@ -95,7 +95,7 @@
           <fieldset>
             <legend>Biografia do Personagem</legend>
             <textarea id="charBio" name="biografia"
-            rows="8" cols="40" class="form-control" maxlength="1000"
+            rows="8" cols="40" class="form-control" maxlength="300"
             placeholder="Descreva brevemente a vida do personagem."></textarea>
           </fieldset>
           <div class="col text-center">
