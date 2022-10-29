@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 # Project Title/Título do Projeto: Practical Challenge/Desafio Prático
 
-## Status: Ongoing/Em Progresso
+## Status: Completed/Completado
 
 ## Description/Descrição: 
 
