@@ -3,7 +3,7 @@
 ### Passo 1: No menu principal do site, deve ser alterado o conteúdo do botão “Home” para “Início” e criado um novo botão que irá redirecionar para uma nova página (“formulario.html”).
 
 ### Solução do passo 1:
-* O conteúdo do botão em questão é definido nos arquivos de página 'index.html', 'formulario.html' e 'lista.html', mais precisamente dentro da tag de navegação '<nav></nav>'. Para alterar o valor desse conteúdo, basta deletar o texto contido nas tags de redirecionamento <a></a> e digitar o texto desejado. Nesse passo, o texto foi alterado de 'Home' para 'Início'.
+* O conteúdo do botão em questão é definido nos arquivos de página 'index.html', 'formulario.html' e 'lista.html', mais precisamente dentro da tag de navegação '<nav>'. Para alterar o valor desse conteúdo, basta deletar o texto contido nas tags de redirecionamento '<a>' e digitar o texto desejado. Nesse passo, o texto foi alterado de 'Home' para 'Início'.
 
 ### Passo 2: Na nova página, criar um formulário para inserir uma ideia para o novo personagem da terceira temporada de The Boys. O formulário deve conter os seguintes campos: nome do personagem, idade, possíveis atores/atrizes, alinhamento* e biografia. *Alinhamento deve conter as opções “The boys” ou “Supes”.
 
