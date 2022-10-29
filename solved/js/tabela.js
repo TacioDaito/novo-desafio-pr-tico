@@ -10,6 +10,15 @@ function addElement(infos, classes) {
     row.appendChild(data);
   }
 
+  //Muda a cor do nome de acordo com o alinhamento do personagem.
+  if (row.children[3].textContent == 'The Boys') {
+    row.children[0].style.color = '#8080ff';
+    row.children[3].style.color = '#8080ff';
+  } else {
+    row.children[0].style.color = '#fa5757';
+    row.children[3].style.color = '#fa5757';
+  }
+
   tabela.appendChild(row);
 }
 
@@ -21,6 +30,7 @@ function getJsonFromUrl(url) {
 getJsonFromUrl('../backend_php/api/personagens.php').then(resultado => {
   let personagensJson = resultado;
   for (let personagem of personagensJson) {
-    addElement(Object.values(personagem), "infoPersonagem");
+    addElement(Object.values(personagem), 'infoPersonagem');
   }
 });
+
